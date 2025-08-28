@@ -15,7 +15,7 @@ function handleCall(button) {
     const service = card.querySelector(".card-title").innerText;
     const number = card.querySelector(".card-number").innerText;
 
-    alert(`Calling ${service} ${number}...`);
+    alert(`📞 Calling ${service} ${number}...`);
 
     coin -= 20;
     document.getElementById("coin-count").innerText = coin;
@@ -38,7 +38,7 @@ function handleCall(button) {
 
     historyDiv.appendChild(newItem);
   } else {
-    alert("You do not have sufficient coins.");
+    alert("❌ You do not have sufficient coins.");
   }
 }
 
