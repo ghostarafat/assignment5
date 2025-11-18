@@ -1,49 +1,60 @@
-### 6. Answer the following questions clearly:
+# 🛎 জরুরি সেবা Portal
 
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-Ans:
-getElementById : We use it to find an element by it's ID. It always gives one element.
+This is a **responsive web application** designed to provide quick access to emergency services. Users can view emergency service cards, track their call history, interact with UI elements like hearts and coins, and copy hotline numbers easily. Built as part of a student project assignment.
 
-getElementsByClassName: by use it to get all elements of a class. It gives an HTMLCollection (live).
+---
 
-querySelector : use it with any CSS selector to get the first matching element.
+## 🌟 Features
 
-querySelectorAll: to get all elements that match a selector. It gives a NodeList (static).
+### Navbar
+1. Logo/website name on the left.  
+2. Heart 💗 icon, coin count (default 100), and Copy Button on the right side.
 
-2. How do you **create and insert a new element into the DOM**?
-Ans:
-Make a new element: document.createElement("tagName").
+### Banner Section
+3. Background color and website name applied.  
+4. Subtitle displayed in the center.
 
-Add content: element.innerText or element.innerHTML.
+### জরুরি-সেবা Section
+5. Section title centered.  
+6. Minimum 6 cards, each containing all required information.  
+7. Fully responsive design across devices.
 
-Insert it: parent.appendChild(newElement)
+### Functionalities
+8. Clicking the **heart 💗 icon** increases the count in the Navbar.  
+9. Clicking a card's **Complete Button** triggers the intended actions.  
+10. Alerts appear if coins are less than 20.  
+11. Clear History button to clear the call history section.  
 
-ex:
-let p = document.createElement("p");
-p.innerText = "Programming Hero";
-document.body.appendChild(p);
+### Challenges / Extra Requirements
+12. Clicking the **Copy Button** shows an alert with the hotline number and increases the copy count.  
+13. Hotline number is copied to clipboard and can be pasted anywhere.  
+14. Clicking the **Call Button** logs the exact time of the call in the call history section.
+
+---
+
+## 🧰 Tech Stack
+- HTML5 → Structure of web pages  
+- CSS3 → Styling and layout  
+- JavaScript (ES6+) → Interactivity and core logic  
+- Responsive Design → Works on desktop and mobile devices
+
+---
+
+## 💻 Installation & Running Locally
+
+1. **Clone the repository:**
+```bash
+git clone <your-repository-link>
+
+2. Open the project:
+cd assignment5
+
+3. Open in browser:
+Double-click index.html or right-click → Open with your browser.
+
+👩‍💻 Developer
+
+Arafat Hossain
+📧 arafathossain173737@gmail.com
 
 
-3. What is **Event Bubbling** and how does it work?
-Ans:
-Event Bubbling is when an event (like a click) happens on an element, it moves up to the parent elements.
-
-So, it goes from child → parent → grandparent.
-
-This is the default behavior.
-
-
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-Ans:
-Event Delegation is when we put an event listener on a parent and let it handle events on its child elements.
-
-It’s useful because we don’t need a separate listener for every child, which saves memory.
-
-Even if we add new child elements later, the parent can still handle their events.
-
-
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
-Ans:
-preventDefault(): stops the normal action of an element. For example, clicking a link won’t reload the page.
-
-stopPropagation(): stops the event from going to parent elements and only works on the element you click.
