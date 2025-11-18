@@ -44,7 +44,7 @@ This is a **responsive web application** designed to provide quick access to eme
 
 1. **Clone the repository:**
 ```bash
-git clone <your-repository-link>
+git clone : https://github.com/ghostarafat/assignment5
 
 2. Open the project:
 cd assignment5
