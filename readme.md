@@ -3,6 +3,8 @@
 This is a **responsive web application** designed to provide quick access to emergency services. Users can view emergency service cards, track their call history, interact with UI elements like hearts and coins, and copy hotline numbers easily. Built as part of a student project assignment.
 
 ---
+🌟 Live Demo
+Client (Live Site): https://ghostarafat.github.io/assignment5/
 
 ## 🌟 Features
 
